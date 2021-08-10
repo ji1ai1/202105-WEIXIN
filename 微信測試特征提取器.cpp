@@ -339,19 +339,16 @@ int main(int 引數數量, char* 引數陣列[])
 {
 	std::ios_base::sync_with_stdio(false);
 
-	if (引數數量 == 1)
-		return 0;
-
 	std::cout << 取得時間() << " \u958b\u59cb......" << std::endl;
 
 	auto 視訊陣列 = new 結構_視訊[視訊數]();
 	讀視訊資料(視訊陣列, "../wbdc2021/data/wedata/wechat_algo_data2/feed_info.csv");
-	讀類目資料(視訊陣列, "data/\u8996\u8a0a\u985e\u76ee\u88682.csv");
+	讀視訊類目資料(視訊陣列, "../\u8cc7\u6599/\u8996\u8a0a\u985e\u76ee\u88682.csv");
 
 	取得測試資料(
-		"data/\u8cc7\u6599"
-		, 引數陣列[1]
-		, "data"
+		"../\u8cc7\u6599/\u8cc7\u6599"
+		, "../wbdc2021/data/wedata/wechat_algo_data2/test_a.csv"
+		, "../\u8cc7\u6599"
 		, 視訊陣列
 	);
 
