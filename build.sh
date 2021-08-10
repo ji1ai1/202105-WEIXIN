@@ -6,4 +6,5 @@ cat 微信特征提取器.cpp | perl -pe 'BEGIN { binmode STDIN, ":utf8"; } s/(.
 
 
 g++ -Wall -O3 -o 微信特征提取器 微信特征提取器U.cpp -lpthread
+g++ -Wall -O3 -o 微信測試特征提取器 微信測試特征提取器U.cpp -lpthread
 
